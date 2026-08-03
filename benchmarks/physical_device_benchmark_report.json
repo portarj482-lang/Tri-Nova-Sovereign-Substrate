@@ -1,60 +1,86 @@
 {
-  "timestamp": "2026-08-03T08:53:07Z",
+  "timestamp": "2026-08-03T09:48:44Z",
+  "trace_id": "TRC-BENCH-18248C90",
+  "tri_nova_standard": "Reverse-Polarity Engineered | Cross-Platform | 14-Variable SMT | Merkle Sealed",
   "device_telemetry": {
     "os": "Windows 10 (64bit)",
     "cpu": "AMD64 Family 25 Model 116 Stepping 1, AuthenticAMD",
     "cpu_cores_physical": 8,
     "cpu_cores_logical": 16,
     "cpu_current_freq_mhz": 2515.0,
-    "cpu_utilization_pct": 23.9,
+    "cpu_utilization_pct": 28.0,
     "ram_total_gb": 30.67,
-    "ram_available_gb": 10.59,
-    "ram_used_pct": 65.5,
+    "ram_available_gb": 10.24,
+    "ram_used_pct": 66.6,
     "disk_c_total_gb": 474.72,
-    "disk_c_free_gb": 16.85,
+    "disk_c_free_gb": 16.46,
     "disk_c_used_pct": 96.5
+  },
+  "hardware_normalization": {
+    "normalization_factor": 0.994,
+    "baseline_freq_mhz": 2500.0,
+    "baseline_cores": 8,
+    "host_freq_mhz": 2515.0,
+    "host_cores": 8
   },
   "agent_benchmarks": {
     "HybridDataOrchestrator": {
-      "execution_time_ms": 0.306,
+      "execution_time_ms": 0.629,
       "status": "success",
-      "throughput_ops_sec": 3267.97,
-      "seal": "44b2e4e1fd5568526711c91c3533cd01"
+      "throughput_ops_sec": 1589.83,
+      "seal": "72007ddc255264d48e3358cb28695a11"
     },
     "HybridQAOrchestrator": {
-      "execution_time_ms": 0.236,
+      "execution_time_ms": 0.575,
       "status": "success",
-      "throughput_ops_sec": 4237.29,
-      "seal": "2cfe72b935e9f812de6067644aa69d0c"
+      "throughput_ops_sec": 1739.13,
+      "seal": "7c933f70f3c867f0cf0e2a9c74c97c0e"
     },
     "HybridCyberOrchestrator": {
-      "execution_time_ms": 0.23,
+      "execution_time_ms": 0.481,
       "status": "success",
-      "throughput_ops_sec": 4347.83,
-      "seal": "e03d2aae48ed843a88d96a073da0eb76"
+      "throughput_ops_sec": 2079.0,
+      "seal": "323f151eff95e0fd7dc449281d14e582"
     },
     "HybridProductDesignOrchestrator": {
-      "execution_time_ms": 0.074,
+      "execution_time_ms": 0.551,
       "status": "success",
-      "throughput_ops_sec": 13513.51,
-      "seal": "b3ac8e79f910885e8309f833270f4b6b"
+      "throughput_ops_sec": 1814.88,
+      "seal": "5d607e62a700d38ac8fcb7796f240d43"
     }
   },
+  "oracle_agent_benchmarks": {
+    "status": "oracle_registry_not_available"
+  },
   "smt_formal_verification": {
-    "z3_version": "4.16.0",
+    "z3_version": "4.16.0.0",
     "solver_result": "sat",
     "formal_proof_status": "UNSAT_VIOLATION_FREE (Satisfiable Safe State)",
-    "solve_time_ms": 3.116
+    "symbolic_invariants_checked": 14,
+    "laws_verified": [
+      "Law_13_SPP",
+      "Law_14_ZeroState",
+      "Law_15_MZAFE",
+      "Law_16_DDHDP"
+    ],
+    "solve_time_ms": 0.843
   },
   "crypto_throughput": {
-    "data_processed_mb": 2288.82,
-    "total_time_sec": 3.4668,
-    "throughput_mb_per_sec": 660.22,
-    "hashes_per_sec": 1442.27
+    "data_processed_mb": 1430.51,
+    "total_time_sec": 2.063,
+    "throughput_mb_per_sec": 693.4,
+    "hashes_per_sec": 2423.61,
+    "normalized_ops_per_sec": 2409.07
   },
   "boot_and_memory": {
-    "typical_cold_boot_sec": 16.5,
+    "typical_cold_boot_sec": 17.57,
     "oracle_clusters_loaded": 8,
-    "memory_overhead_mb": 48.59
+    "breakthrough_oracles_loaded": 37,
+    "total_tools_registered": 109,
+    "memory_overhead_mb": 47.34
+  },
+  "integrity": {
+    "report_merkle_seal": "b3575351275b7851a6bd97c51e6c30ac",
+    "leap_layer_egress": "6f5212bb9636dd02010f5ea3272d54b5"
   }
 }
