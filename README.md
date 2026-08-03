@@ -60,13 +60,14 @@ Empirical metrics recorded live on local host hardware (AMD Ryzen 8-Core / 16-Th
 
 ---
 
-## 🛡️ Anti-Reverse Engineering & Anti-Scraping Protection
+## 🛡️ Anti-Reverse Engineering & Zero-Day Attack Defense
 
-The substrate incorporates a dedicated runtime protection layer (`security_anti_reverse_engineering.py`):
+The substrate incorporates a multi-layer security & zero-day defense architecture. For full technical details, see [docs/security_zero_day_defense.md](docs/security_zero_day_defense.md).
 
-- **Code Integrity SHA-512 Verification**: Detects live binary tampering, breakpoint injections, and unexpected AST modifications.
+- **Source Code SHA-512 Anti-Tamper Verification**: Detects live binary debugging hooks (`gdb`, `frida`), breakpoint injections, and unexpected AST modifications.
 - **Anti-Scraping Bot Inspector**: Rejects automated headless crawlers (`python-requests`, `puppeteer`, `selenium`, `curl`) with immediate `403 Forbidden` responses.
-- **Dynamic Decoy Honeypot Traps (Law 16)**: Traps unauthorized crawlers in synthetic decoy folders and logs intrusion alerts to the Merkle Audit Ledger DB.
+- **Dynamic Decoy Honeypot Traps (Law 16 DDHDP)**: Traps unauthorized crawlers in synthetic decoy folders (`L1_Decoy` – `L3_Decoy`) and logs intrusion alerts to the Merkle Audit Ledger DB.
+- **Z3 SMT Pre-Execution Veto Gate**: Evaluates 14 symbolic state invariants prior to tool dispatch to mathematically veto zero-day payloads before execution.
 
 ---
 
