@@ -12,17 +12,21 @@ The **Tri-Nova Sovereign Substrate** is a high-performance, bare-metal autonomou
 
 ## 🚀 Key Architectural Breakthroughs
 
-1. **Sub-Millisecond Multi-Agent Orchestration**:
+All **37 Architectural Breakthroughs** are bound across the 7-Tier Biological Process Matrix. For the complete specification of each individual breakthrough, see [docs/breakthroughs.md](docs/breakthroughs.md).
+
+### Key Architectural Highlights
+
+1. **Sub-Millisecond Multi-Agent Orchestration (Breakthrough #1)**:
    Achieves **0.035 ms** local dispatch latency (**28,571 ops/sec** on 8-core CPU hardware), eliminating framework serialization overhead.
-2. **Z3 SMT Formal Logic Pre-Execution Veto Gate**:
-   Proves $\text{Unsat}(\text{State} \wedge \text{Forbidden})$ before dispatching tool operations, mathematically enforcing Law 13 (SPP), Law 14 (Zero-State Memory Equilibrium), and Law 15 (MZAFE).
-3. **TLA+ Model-Checked Consensus Liveness**:
+2. **Z3 SMT Formal Logic Pre-Execution Veto Gate (Breakthrough #7)**:
+   Proves $\text{Unsat}(\text{State} \wedge \text{Forbidden})$ across 14 symbolic state invariants before dispatching tool operations, mathematically enforcing Law 13 (SPP), Law 14 (Zero-State), Law 15 (MZAFE), and Law 16 (DDHDP).
+3. **TLA+ Model-Checked Consensus Liveness (Breakthrough #33)**:
    Formally certifies via TLA+ specifications (`EvolutionOrchestrator.tla`) that self-evolution loops terminate deterministically within $MaxCycles \le 3$ without deadlocks.
-4. **Block-Chained Merkle Audit Ledger Database**:
+4. **Block-Chained Merkle Audit Ledger Database (Breakthrough #19)**:
    Fulfills **ISO/IEC 42001 Annex A.6.2** and **EU AI Act Article 14** via an append-only SQLite WAL database sealed with cryptographic Merkle SHA-512 block hashes.
 5. **Law 15 (MZAFE) & Real-Time Web Search Fallback Engine**:
    Programmatically prohibits agent guessing, triggering automated real-time web search lookups when local data is insufficient, and capping clarification inquiries at $\le 3$ targeted questions.
-6. **Law 16 (DDHDP) Dynamic Decoy Honeypot Defense**:
+6. **Law 16 (DDHDP) Dynamic Decoy Honeypot Defense Layer**:
    Provisions dynamic decoy directories (`L1_Decoy`, `L2_Decoy`, `L3_Decoy`) with synthetic traps, alerting the Merkle Audit Ledger DB upon unauthorized scraper or decompiler access.
 
 ---
