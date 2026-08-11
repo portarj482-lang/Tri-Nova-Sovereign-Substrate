@@ -6,7 +6,12 @@
 [![Boot Verification](https://img.shields.io/badge/Boot_Sequence-17_Steps_Verified-success.svg)](boot.py)
 [![Orchestration Speed](https://img.shields.io/badge/Dispatch-0.035ms-orange.svg)](benchmarks/physical_device_benchmark_report.json)
 
-The **Tri-Nova Sovereign Substrate** is a high-performance, bare-metal autonomous agent infrastructure engineered for zero-trust multi-agent orchestration, formal logic verification, dynamic decoy honeypot security, and biomorphic process scaling.
+> [!IMPORTANT]
+> ### 🚀 Upgrade to Tri-Nova Sovereign Substrate Enterprise Edition
+> Deploy production Zero-Trust AI Agent Governance, Ed25519 Merkle Audit Ledgers, L22 Hardware Policy Gates, and Autonomous Web3 Crypto Payments (USDT, USDC, SOL, ETH, BTC) on Render:
+> 
+> 🌐 **Live Web3 Command Center Portal:** [https://sovereign-substrate-enterprise.onrender.com/](https://sovereign-substrate-enterprise.onrender.com/)
+> ⚡ **Direct Web3 Crypto Buy Portal:** [https://sovereign-substrate-enterprise.onrender.com/crypto-buy](https://sovereign-substrate-enterprise.onrender.com/crypto-buy)
 
 ---
 
