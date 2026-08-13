@@ -1,0 +1,29 @@
+name: Pylint Code Quality Analysis
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
+    - name: Analysing the code with pylint
+      run: |
+        # --exit-zero ensures that Pylint will output a code quality score (e.g., 9.5/10)
+        # without causing the GitHub Action to fail and show a red 'X' over minor styling warnings.
+        pylint --exit-zero $(find . -name "*.py" -not -path "./venv/*")
